@@ -1,0 +1,7 @@
+(define (f a b c)
+  (+ (* a a)
+     (* b b)
+     (* c c)
+     (if (> a b)
+         (if (> b c) (-(* c c)) (-(* b b)))
+         (if (> a c) (-(* c c)) (-(* a a))))))
